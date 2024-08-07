@@ -13,7 +13,7 @@ class ContentRating extends Component {
     render() {
         return (
             <>
-                <div className="content-rating">
+                <div className='content-rating'>
                     <p>
                     Life is often seen as a complex journey, one that is impossible
                     to understand, and this is the way I used to look at it for a long time.
@@ -24,6 +24,14 @@ class ContentRating extends Component {
                     as beneficial and meaningful—I noticed that seeing life as complex
                     isn’t going to lead me to it.
                     </p>
+                    <div className='rating-buttons'>
+                        <button className='like-button'>
+                            Like ({this.state.likes})
+                        </button>
+                        <button className='dislike-button'>
+                            Dislike ({this.state.dislikes})
+                        </button>
+                    </div>
                 </div>
             </>
         );
